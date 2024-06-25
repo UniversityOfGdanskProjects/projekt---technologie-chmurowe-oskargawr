@@ -2,6 +2,7 @@ import jwtmod from "jsonwebtoken";
 
 export default async (req, res, next) => {
   try {
+    // console.log(process.env.PUBLICKEY);
     const bearerHeader = req.headers["authorization"];
     if (!bearerHeader) {
       return res.sendStatus(401);
@@ -11,6 +12,8 @@ export default async (req, res, next) => {
     if (!token) {
       return res.sendStatus(401);
     }
+
+    // console.log(token);
 
     const public_key = `-----BEGIN PUBLIC KEY-----\n${process.env.PUBLICKEY}\n-----END PUBLIC KEY-----`;
 

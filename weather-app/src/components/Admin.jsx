@@ -24,7 +24,7 @@ const Admin = ({ token }) => {
   useEffect(() => {
     const fetchHistory = async () => {
       try {
-        const response = await axios.post('/history', {role}, config);
+        const response = await axios.post('/api/history', {role}, config);
         setHistory(response);
       } catch (error) {
         console.error(error);
@@ -41,7 +41,7 @@ const Admin = ({ token }) => {
     console.log("klikam")
     setShowHistory(true);
     try {
-      const response = await axios.post('/history', {role}, config);
+      const response = await axios.post('/api/history', {role}, config);
       setHistory(response.data);
       console.log(response.data)
     } catch (error) {

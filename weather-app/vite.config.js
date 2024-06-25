@@ -5,19 +5,19 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   server: {
     proxy: {
-      "/documents": {
+      "/api/documents": {
         target: "http://server-cluster-ip-service:8888",
         changeOrigin: true,
       },
-      "/weather": {
+      "/api/weather": {
         target: "http://server-cluster-ip-service:8888",
         changeOrigin: true,
       },
-      "/citylist": {
+      "/api/citylist": {
         target: "http://server-cluster-ip-service:8888",
         changeOrigin: true,
       },
-      "/history": {
+      "/api/history": {
         target: "http://server-cluster-ip-service:8888",
         changeOrigin: true,
       },

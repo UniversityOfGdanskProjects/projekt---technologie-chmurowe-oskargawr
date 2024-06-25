@@ -2,8 +2,8 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: example-ingress
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+  # annotations:
+  #   nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx-example
   rules:
@@ -17,31 +17,11 @@ spec:
             name: client-cluster-ip-service
             port:
               number: 80
-      - path: /documents
-        pathType: Prefix
+      - path: /api/?(.*)
+        pathType: ImplementationSpecific
         backend:
           service:
             name: server-cluster-ip-service
             port:
               number: 8888
-      - path: /weather
-        pathType: Prefix
-        backend:
-          service:
-            name: server-cluster-ip-service
-            port:
-              number: 8888
-      - path: /citylist
-        pathType: Prefix
-        backend:
-          service:
-            name: server-cluster-ip-service
-            port:
-              number: 8888
-      - path: /history
-        pathType: Prefix
-        backend:
-          service:
-            name: server-cluster-ip-service
-            port:
-              number: 8888
+

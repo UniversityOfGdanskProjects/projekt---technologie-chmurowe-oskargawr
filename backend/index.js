@@ -54,10 +54,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(attachRedisClient);
-app.use("/documents", authenticate, documents);
-app.use("/weather", authenticate, weather);
-app.use("/citylist", authenticate, citylist);
-app.use("/history", authenticate, history);
+app.use("/api/documents", authenticate, documents);
+app.use("/api/weather", authenticate, weather);
+app.use("/api/citylist", authenticate, citylist);
+app.use("/api/history", authenticate, history);
 
 const server = app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);

@@ -29,7 +29,7 @@ const Public = ({ token }) => {
       try {
         console.log("search: ", search);
         const response = await axios.get(
-          `/weather?lat=${search.lat}&lon=${search.lon}`, config
+          `/api/weather?lat=${search.lat}&lon=${search.lon}`, config
         );
 
         setWeatherData((prevData) => ({

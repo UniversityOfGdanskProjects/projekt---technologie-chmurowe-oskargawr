@@ -22,7 +22,7 @@ function Search({ onSearchChange, token }) {
 
   const loadOptions = async (input) => {
     try {
-      const response = await axios.get(`/citylist?search=${input}`, config);
+      const response = await axios.get(`/api/citylist?search=${input}`, config);
       return {
         options: response.data.options
       };

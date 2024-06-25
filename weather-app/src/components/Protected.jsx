@@ -16,7 +16,7 @@ function Protected({token}) {
             }
         }
 
-        axios.get('/documents', config).then((res) => setData(res.data.data)).catch((error) => console.log(error.message));
+        axios.get('/api/documents', config).then((res) => setData(res.data.data)).catch((error) => console.log(error.message));
     }, []);
   return data ? (
     <>
