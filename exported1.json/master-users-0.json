@@ -1,0 +1,26 @@
+{
+  "realm" : "master",
+  "users" : [ {
+    "id" : "42c091ac-357e-451d-99a4-1bdea02b3bab",
+    "createdTimestamp" : 1718994021303,
+    "username" : "admin",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "credentials" : [ {
+      "id" : "69f8bfce-a794-4344-9cc5-c69d69529be5",
+      "type" : "password",
+      "createdDate" : 1718994021549,
+      "secretData" : "{\"value\":\"iThXPC+lKuS4l4YJi5VEcjA+tW9Q1z0joJjFbPb9ntHKAJIsGc3lWhjuedrvcyhxBDam5tM/Erw6Cp7oeldNvA==\",\"salt\":\"yNg/o/bjA8oiqDt2eOz5Uw==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-master", "admin" ],
+    "clientRoles" : {
+      "weather-app-realm" : [ "manage-clients", "query-realms", "view-identity-providers", "query-clients", "view-realm", "manage-events", "view-clients", "manage-users", "create-client", "view-authorization", "query-users", "manage-authorization", "view-users", "view-events", "manage-identity-providers", "manage-realm", "query-groups" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}

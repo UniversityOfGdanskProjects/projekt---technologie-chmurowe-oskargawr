@@ -1,0 +1,48 @@
+{
+  "realm" : "weather-app",
+  "users" : [ {
+    "id" : "d1882fa3-6ac7-418a-a6e6-085d47cab5db",
+    "createdTimestamp" : 1718998208637,
+    "username" : "oskar",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "oski",
+    "lastName" : "gawr",
+    "email" : "oskar@test.com",
+    "credentials" : [ {
+      "id" : "f3e0e66b-866e-499c-80a6-e84044f4f673",
+      "type" : "password",
+      "createdDate" : 1718998208886,
+      "secretData" : "{\"value\":\"1KKivhZALkyLn0a6hbgzGkhXw5xY15WmrRZ/MFuT8HWLy5mziqPLhIewkMeElXiYMg52P5z6NrpiAV2ZkiBbrA==\",\"salt\":\"ZHU+UJ3q9jxOvxK/cH43vQ==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-weather-app" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  }, {
+    "id" : "d9071006-5539-438b-a620-bf9e3b090c6a",
+    "createdTimestamp" : 1718995860875,
+    "username" : "test",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : false,
+    "firstName" : "Test",
+    "lastName" : "Test",
+    "email" : "test@tesst.com",
+    "credentials" : [ {
+      "id" : "1be2c373-c009-49eb-856d-3f1079fa5c70",
+      "type" : "password",
+      "createdDate" : 1718995921567,
+      "secretData" : "{\"value\":\"eeDzu7G0NhsFVkIfb0K6LJe3BXABznf9RF1oiZPr+flNQ+hVUI9fyg9mGPyYveBEopx+E6+K+y1LXgXvFVggKA==\",\"salt\":\"MK1XCCXBaZW4SJgHq14Xag==\",\"additionalParameters\":{}}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\",\"additionalParameters\":{}}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "default-roles-weather-app" ],
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}
