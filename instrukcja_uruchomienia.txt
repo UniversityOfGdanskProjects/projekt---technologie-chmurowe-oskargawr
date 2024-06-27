@@ -1,0 +1,11 @@
+Uruchomienie kontenera z keycloakiem: docker run -d -p 8080:8080 -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin oskargawr/weather_app_keycloak
+
+Uruchomienie reszty aplikacji: kubectl apply -f k8s
+
+Aplikacja posiada dwoch stworzonych userow:
+    - admin:admin - konto administratora
+    - test:123 - przykladowy user
+
+W przypadku tworzenia nowego uzytkownika zalecam dodac adres email, aby dane zapisywaly sie w bazie danych.
+
+W przypadku problemow z uruchomieniem proszę o kontakt.
